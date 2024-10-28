@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+}
+
+body {
+    margin: 20px;
+}
+
+.weather-api {
+    width: 200px;
+    height: 250px;
+    background-image: url(images/clearsky.jpg);
+}
+
+.out ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.city-name {
+    text-align: center;
+}
+
+.temp {
+    text-align: center;
+
+}
+.weather {
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+}
+
+select {
+    background: none;
+    border: none;
+    width: 200px;
+    height: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select:active, select:focus {
+    outline: none;
+  }
+
+  .temp-max {
+    font-size: 20px;
+    padding-left: 10px;
+    width: 45%;
+    margin: 0 1.25%;
+    float: left;
+  }
+
+  .temp-max:before {
+    content: 'max:';
+  }
+
+  .temp-max::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .temp-min {
+    font-size: 20px;
+    width: 45%;
+    margin: 0 1.25%;
+    float: right;
+}
+
+  .temp-min:before {
+    content: 'min:';
+}
+
+.temp-min::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
