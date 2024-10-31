@@ -6,11 +6,7 @@ const cities = {
     2735943: 'Porto',
 }
 
-const param = {
-    'url': 'http://api.openweathermap.org/data/2.5/',
-    'appid': 'e3305b2b55b5d5c92f7ba109c39204bc',
-}
-//получаем select
+//we receive select
 function init() {
     const selectcity = document.createElement('select');
     let block = document.querySelector("#block");
@@ -23,10 +19,10 @@ function init() {
         selectcity.append(opt);
     }
     block.append(selectcity);
-    getWeather(); //первый запуск
-    block.onchange = getWeather; //запуск по событию
+    getWeather(); //first launch
+    block.onchange = getWeather; //event triggered
 }
-// получаем погоду
+// we receive weather
 function getWeather() {
     let cityId = document.querySelector('#City').value;
     fetch(`${param.url}weather?id=${cityId}&appid=${param.appid}`)
